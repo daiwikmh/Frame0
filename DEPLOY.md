@@ -48,7 +48,7 @@ BACKEND_INTERNAL_TOKEN=<random 32-byte base64 string>
 ```
 
 NOTE: `NEXT_PUBLIC_API_URL` is no longer used. All browser API calls go through
-the same-origin Next proxy at `/api/_back/*`, which checks the NextAuth session
+the same-origin Next proxy at `/api/proxy/*`, which checks the NextAuth session
 and forwards to the backend with `X-Internal-Token`. The browser never sees the
 backend URL.
 

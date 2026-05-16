@@ -44,7 +44,7 @@ export interface NewsResponse {
   items: NewsItem[];
 }
 
-const API_BASE = "/api/_back";
+const API_BASE = "/api/proxy";
 
 function backUrl(path: string): string {
   const stripped = path.startsWith("/api/") ? path.slice(4) : path;
